@@ -4,6 +4,7 @@ class verga{
 	//atributos
 	protected float largo, radio;
 	private float volumenBolas;
+	private bool teamSangre
 
 	//operadores
 	bool tenerGanas(float liquidosConsumidos){
@@ -23,7 +24,19 @@ class verga{
 		return cantidadChorro;
 	}
 
-	float erectar(float largo, float radio){
+	float erectarRadio(float radio, bool teamSangre){
+		if(teamSangre){
 
+		}else{
+
+		}
+	}
+
+	float erectarLargo(float largo, bool teamSangre){
+		if(teamSangre){
+			return largo*3.0
+		}else{
+			return largo*1.5
+		}
 	}
 }
