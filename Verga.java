@@ -1,13 +1,13 @@
 
 
-class verga{
+class Verga{
 	//atributos
 	protected float largo, radio;
 	private float volumenBolas;
-	private bool teamSangre
+	private boolean teamSangre;
 
 	//operadores
-	bool tenerGanas(float liquidosConsumidos){
+	boolean tenerGanas(float liquidosConsumidos){
 		if(liquidosConsumidos>=(volumenBolas/2.0)){
 			return true;
 		}else{
@@ -16,27 +16,27 @@ class verga{
 	}
 
 	float mear(float liquidosConsumidos){
-		float cantidadChorro;
+		float cantidadChorro = 0;
 		if(tenerGanas(liquidosConsumidos)){
-			chorro = liquidosConsumidos;
+			cantidadChorro = liquidosConsumidos;
 			liquidosConsumidos = 0;
 		}
 		return cantidadChorro;
 	}
 
-	float erectarRadio(float radio, bool teamSangre){
+	float erectarRadio(float radio, boolean teamSangre){
 		if(teamSangre){
-
+			return radio*(float)2.0;
 		}else{
-
+			return radio*(float)1.1;
 		}
 	}
 
-	float erectarLargo(float largo, bool teamSangre){
+	float erectarLargo(float largo, boolean teamSangre){
 		if(teamSangre){
-			return largo*3.0
+			return largo*(float)3.0;
 		}else{
-			return largo*1.5
+			return largo*(float)1.25;
 		}
 	}
 }
